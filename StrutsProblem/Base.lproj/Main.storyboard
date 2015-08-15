@@ -1,25 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="feD-r0-gBM"/>
+                        <viewControllerLayoutGuide type="bottom" id="ywl-0O-S8q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcB-qN-BIc">
+                                <rect key="frame" x="20" y="294" width="280" height="254"/>
+                                <color key="backgroundColor" red="0.57314195980000004" green="0.87316083020000002" blue="0.88133285979999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssq-rt-Vw4">
+                                <rect key="frame" x="20" y="20" width="130" height="254"/>
+                                <color key="backgroundColor" red="0.67524487519999998" green="1" blue="0.61590812189999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouT-UG-Rgd">
+                                <rect key="frame" x="170" y="20" width="130" height="254"/>
+                                <color key="backgroundColor" red="1" green="0.83069338971385009" blue="0.30945723396006064" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ssq-rt-Vw4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="3ag-jL-LYp"/>
+                            <constraint firstAttribute="bottom" secondItem="OcB-qN-BIc" secondAttribute="bottom" constant="20" id="87C-vM-n7o"/>
+                            <constraint firstItem="ouT-UG-Rgd" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="ACb-XW-70n"/>
+                            <constraint firstItem="OcB-qN-BIc" firstAttribute="height" secondItem="ssq-rt-Vw4" secondAttribute="height" id="Iv7-GP-dMb"/>
+                            <constraint firstItem="ouT-UG-Rgd" firstAttribute="leading" secondItem="ssq-rt-Vw4" secondAttribute="trailing" constant="20" id="Pqx-3Y-vWS"/>
+                            <constraint firstItem="OcB-qN-BIc" firstAttribute="height" secondItem="ouT-UG-Rgd" secondAttribute="height" id="TLR-Y0-maD"/>
+                            <constraint firstItem="ssq-rt-Vw4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="fgf-Rs-2o6"/>
+                            <constraint firstAttribute="trailing" secondItem="OcB-qN-BIc" secondAttribute="trailing" constant="20" id="hKa-Zs-i6d"/>
+                            <constraint firstItem="ssq-rt-Vw4" firstAttribute="width" secondItem="ouT-UG-Rgd" secondAttribute="width" id="jr1-GS-wyB"/>
+                            <constraint firstItem="OcB-qN-BIc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="mjE-98-Mck"/>
+                            <constraint firstAttribute="trailing" secondItem="ouT-UG-Rgd" secondAttribute="trailing" constant="20" id="srF-5F-bU8"/>
+                            <constraint firstItem="OcB-qN-BIc" firstAttribute="top" secondItem="ssq-rt-Vw4" secondAttribute="bottom" constant="20" id="wal-Kc-Uy5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomView" destination="OcB-qN-BIc" id="FqV-rN-3N2"/>
+                        <outlet property="topLeftView" destination="ssq-rt-Vw4" id="ctv-4D-3ol"/>
+                        <outlet property="topRightView" destination="ouT-UG-Rgd" id="UhD-vE-9ws"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="218" y="368"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
