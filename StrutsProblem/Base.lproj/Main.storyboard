@@ -55,6 +55,62 @@
             </objects>
             <point key="canvasLocation" x="218" y="368"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EKQ-Lw-tsi">
+            <objects>
+                <viewController id="Mwn-8H-haG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zPV-8Y-Qv9"/>
+                        <viewControllerLayoutGuide type="bottom" id="hmT-wj-Vh5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIB-U8-dgK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC3-Hd-Rfz">
+                                <rect key="frame" x="206" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOJ-si-iuO">
+                                <rect key="frame" x="119" y="518" width="81" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A long label">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dt8-rG-IYd">
+                                <rect key="frame" x="45" y="518" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa8-WT-xqm">
+                                <rect key="frame" x="119" y="447" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.67524487519999998" green="1" blue="0.61590812189999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WC3-Hd-Rfz" secondAttribute="trailing" constant="68" id="0PO-8V-OxU"/>
+                            <constraint firstItem="fOJ-si-iuO" firstAttribute="top" secondItem="wa8-WT-xqm" secondAttribute="bottom" constant="40" id="2ue-ON-Udf"/>
+                            <constraint firstItem="hmT-wj-Vh5" firstAttribute="top" secondItem="dt8-rG-IYd" secondAttribute="bottom" constant="20" id="3Go-8T-wi4"/>
+                            <constraint firstItem="WC3-Hd-Rfz" firstAttribute="top" secondItem="bIB-U8-dgK" secondAttribute="top" constant="20" id="6lt-eF-KN7"/>
+                            <constraint firstAttribute="bottom" secondItem="fOJ-si-iuO" secondAttribute="bottom" constant="20" id="9yr-rx-k3k"/>
+                            <constraint firstItem="fOJ-si-iuO" firstAttribute="leading" secondItem="wa8-WT-xqm" secondAttribute="leading" id="Ds3-xD-4Eu"/>
+                            <constraint firstAttribute="centerX" secondItem="fOJ-si-iuO" secondAttribute="centerX" id="Exf-xU-8VO"/>
+                            <constraint firstItem="fOJ-si-iuO" firstAttribute="leading" secondItem="dt8-rG-IYd" secondAttribute="trailing" constant="28" id="G6x-me-tke"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ape-kS-JeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="368"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
